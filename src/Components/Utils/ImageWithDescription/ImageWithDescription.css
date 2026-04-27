@@ -1,0 +1,10 @@
+img {
+  height: 10vw;
+  margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  img {
+    height: 80vw;
+    margin-bottom: 1rem;
+  }
+}

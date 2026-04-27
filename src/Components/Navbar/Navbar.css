@@ -1,0 +1,44 @@
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background: var(--navbar);
+    margin-bottom: 5vh;
+    z-index: 6;
+    font-size: 24px;
+    font-family: 'Bebas Neue', Courier, monospace;
+}
+#navbarLogo{
+    width: 50px;
+    height: auto;
+}
+.special{
+    color: var(--text);
+    margin-right: 10rem;
+    font-family:  'Montserrat', 'serif';
+}
+.active {
+    color: #00b2e3;
+    text-decoration-line: none;
+    display: flex;
+    align-items: center;
+    
+}
+.nav-item{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-decoration-line: none;
+    text-transform: capitalize;
+    color: var(--text);
+    text-transform: capitalize;
+    transition: color 0.5s ease;
+}
+
+.nav-item:hover{
+  color: #61dafb;
+}

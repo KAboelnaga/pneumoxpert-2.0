@@ -1,0 +1,10 @@
+h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 5vw;
+    color:  #00b2e3;
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 10vw;
+    }
+}
