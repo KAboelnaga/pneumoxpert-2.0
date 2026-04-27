@@ -1,0 +1,146 @@
+.main {
+  width: 100%;
+}
+
+/* Center container */
+#container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Dropzone card */
+.dropzone-box {
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  justify-content: center;
+  max-width: 36rem;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(20, 20, 20);
+  color: white;
+}
+
+/* Light mode */
+.light .dropzone-box {
+  background-color: white;
+  color: black;
+  box-shadow: rgba(83, 83, 83, 0.2) 0px 8px 24px;
+}
+
+.dropzone-box h2 {
+  font-size: 2rem;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+/* Drop area */
+.dropzone-area {
+  padding: 1rem;
+  position: relative;
+  margin-top: 1rem;
+  min-height: 16rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px dashed var(--primary);
+  border-radius: 1rem;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+/* Invisible file input */
+.dropzone-area input[type="file"] {
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  inset: 0;
+}
+
+/* Drag active */
+.dropzone--over {
+  border-style: solid;
+  background-color: var(--background);
+}
+
+/* Image preview */
+.preview-img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
+/* Image container */
+#imageContainer {
+  width: 20vw;
+}
+
+/* Actions */
+.dropzone-actions {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--gray);
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.dropzone-actions button {
+  flex-grow: 1;
+  min-height: 3rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.dropzone-actions button:hover {
+  text-decoration: underline;
+}
+
+/* Reset button */
+#resetButton {
+  background-color: lightslategray;
+  border: none;
+}
+
+.light #resetButton {
+  background-color: lightgray;
+}
+
+/* Submit button */
+#submit-button {
+  background-color: rgb(12, 160, 209);
+  color: white;
+  border: none;
+}
+
+.light #submit-button {
+  background-color: skyblue;
+}
+
+/* Message */
+.message {
+  font-style: oblique;
+  font-weight: bold;
+}
+
+/* Utility */
+.hidden {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .dropzone-box {
+    max-width: 100vw;
+  }
+
+  #imageContainer {
+    width: 50vw;
+  }
+}

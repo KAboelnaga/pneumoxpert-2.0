@@ -2,8 +2,8 @@ import './ImageWithDescription.css';
 export default function ImageWithDescription({ imageSrc, description }) {
     return (
       <div>
-        <img src={imageSrc} alt={description}  />
-        <p>{description}</p>
+        <img className='homeImage' src={imageSrc} alt={description}  />
+        <p className='imageDescription'>{description}</p>
       </div>
     );
   }

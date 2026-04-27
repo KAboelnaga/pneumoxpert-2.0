@@ -1,6 +1,11 @@
-img {
+.homeImage {
   height: 10vw;
   margin-bottom: 1rem;
+}
+.imageDescription{
+  text-align: center;
+  width: 100%;
+  font-size: 24px;
 }
 @media (max-width: 768px) {
   img {

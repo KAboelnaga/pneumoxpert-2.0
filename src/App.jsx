@@ -3,8 +3,8 @@ import Navbar from './Components/Navbar/Navbar.jsx';
 import { Routes, Route } from "react-router-dom";
 import Home from './Pages/Home/Home.jsx';
 import About from './Pages/About/About.jsx';
-import UploadXray from './Pages/UploadXray.jsx';
-import ContactUs from './Pages/ContactUs.jsx';
+import UploadXray from './Pages/UploadXray/UploadXray.jsx';
+import ContactUs from './Pages/ContactUs/ContactUs.jsx';
 import LoginSignup from './Pages/Login-Signup.jsx';
 export default function App() {
   return (
