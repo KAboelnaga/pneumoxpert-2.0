@@ -69,7 +69,7 @@ export default function UploadXray() {
     <div id="container">
       <form className="dropzone-box" onSubmit={handleImageUpload}>
         <h2>Upload Xray for diagnosis</h2>
-        <p>Attach your xray</p>
+        <p  style={{ margin: "0" }}>Attach your xray</p>
 
         <div
           className={`dropzone-area ${dragging ? "dropzone--over" : ""}`}
@@ -77,7 +77,7 @@ export default function UploadXray() {
           onDragOver={handleDragOver}
           onDragLeave={handleDragLeave}
         >
-          {!preview && <p>Click to upload or drag and drop</p>}
+          {!preview && <p style={{ margin: "0", marginBottom: "2rem" }}>Click to upload or drag and drop</p>}
 
           {preview && (
             <img src={preview} alt="preview" className="preview-img" />
@@ -89,7 +89,7 @@ export default function UploadXray() {
             onChange={(e) => handleImageChange(e.target.files[0])}
           />
 
-          <p className="message">
+          <p className="message" style={{ margin: "0" }}> 
             {uploadedImage
               ? `${uploadedImage.name}, ${uploadedImage.size} bytes`
               : "No Files Selected"}

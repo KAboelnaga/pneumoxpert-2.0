@@ -3,7 +3,7 @@ export default function ImageWithDescription({ imageSrc, description }) {
     return (
       <div>
         <img className='homeImage' src={imageSrc} alt={description}  />
-        <p className='imageDescription'>{description}</p>
+        <p className='imageDescription' style={{margin: '1vh'}}>{description}</p>
       </div>
     );
   }

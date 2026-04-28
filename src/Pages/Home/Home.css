@@ -31,10 +31,6 @@
   background-image: "xray.png";
   mix-blend-mode: screen;
 }
-p {
-  font-size: 1.5vw;
-  justify-self: left;
-}
 @keyframes moveLine {
   0% {
     transform: translateY(0%);
@@ -57,9 +53,6 @@ p {
   height: 10vw;
   margin-bottom: 1rem;
 }
-/* p {
-  font-size: 1.5vw;
-} */
 
 @media (max-width: 768px) {
   .intro {
@@ -90,12 +83,7 @@ p {
     margin-bottom: 1rem;
   }
   img {
-    height: 70vw;
-  }
-
-  p {
-    font-size: 6vw;
-    text-align: center;
+    height: 70%;
   }
   @keyframes moveLine {
     0% {

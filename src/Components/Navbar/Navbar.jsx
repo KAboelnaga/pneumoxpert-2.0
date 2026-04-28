@@ -5,7 +5,7 @@ import HomeIcon from '../../assets/NavbarIcons/home.svg?react';
 import AboutIcon from '../../assets/NavbarIcons/about.svg?react';
 import UploadXrayIcon from '../../assets/NavbarIcons/upload-xray.svg?react';
 import ContactUsIcon from '../../assets/NavbarIcons/contact-us.svg?react';
-import LoginIcon from '../../assets/NavbarIcons/login.svg?react';
+// import LoginIcon from '../../assets/NavbarIcons/login.svg?react';
 // import UserIcon from '../../assets/NavbarIcons/user.svg?react';
 import mainLogo from '../../assets/NavbarIcons/logo.png';
 import DarkModeIcon from '../../assets/NavbarIcons/dark-mode.svg?react';
@@ -63,14 +63,13 @@ export default function Navbar() {
             <ContactUsIcon width="24" height="24"/>
             contact us
             </NavLink>
-
-            <NavLink
+            {/* <NavLink
             to="/LoginSignup"
             className={({ isActive }) => (isActive ? "active" : "nav-item")}
             >
             <LoginIcon width="24" height="24"/>
             login/signup
-            </NavLink>
+            </NavLink> */}
 
             {/* {isLogged && (
                 <NavLink
